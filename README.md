@@ -30,16 +30,27 @@ This board is designed to connect addressable LEDs/Neopixel strips and handle th
 - connector to flash firmware with CP2104 (3.3V, TX, RX, GND)
 
 ## BOM
-- 1 x WLED ESP32 Controller presoldered
-    - C1, C3: 10µF 0805
-    - C2: 47µF 0805
-    - C4: 100nF 0805
-    - R1, R2, R3, R4: 330 Ohm 0805
-    - R5, R6: 10k Ohm 0805
-    - SW1, SW2: SW-SMD-3.7x6.1_2P
-    - U1: AMS1117-3.3 SOT-223-3
-    - U2: ESP-WROOM-32
-    - U3: SN74AHCT125DR / SN74AHCT32DR
+- 1 x WLED ESP32 Controller presoldered from https://jlcpcb.com/
+
+|Comment|Designator|Footprint|LCSC
+|---|---|---|---
+10µ|C1,C3|Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder|C15850
+47µ|C2|Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder|C16780
+100n|C4,C5|Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder|C49678
+MountingHole|H1,H2|MountingHole:MountingHole_3.2mm_M3_DIN965|
+Conn_01x06_Female|J1|TerminalBlock:TerminalBlock_bornier-6_P5.08mm|
+Conn_01x04_Female|J2|Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical|
+Conn_01x07_Female|J3|Connector_PinHeader_2.54mm:PinHeader_1x07_P2.54mm_Vertical|
+Jumper_NO_Small|JP1,JP2,JP3,JP4|Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm|
+330|R1,R2,R3,R4|Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder|C17630
+10K|R5,R6|Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder|C17414
+Reset|SW1|Button_Switch_SMD:SW_SPST_CK_RS282G05A3|C354943
+Flash|SW2|Button_Switch_SMD:SW_SPST_CK_RS282G05A3|C354943
+AMS1117-3.3|U1|Package_TO_SOT_SMD:SOT-223-3_TabPin2|C6186
+ESP32-WROOM-32|U2|RF_Module:ESP32-WROOM-32|C82899
+SN74AHCT125D|U3|WLED_ESP32:SOIC127P600X175-14N|C155176
+	
+	
 - 3 x 2-pin screw terminal (https://www.amazon.de/gp/product/B08JB6SSCJ)
 - 1 x 4-pin header male
 - 1 x 7-pin header male
