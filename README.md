@@ -89,5 +89,4 @@ SN74AHCT125D|U3|WLED_ESP32:SOIC127P600X175-14N|C155176
 
 ## Case
 - https://www.prusaprinters.org/prints/124223-wled-controller-base-housing
-- https://www.thingiverse.com/thing:5282811
 - https://www.printables.com/model/163438-housing-for-esp32-wled-controller
